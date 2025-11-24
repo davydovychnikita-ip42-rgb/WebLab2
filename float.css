@@ -1,0 +1,100 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Прибираємо прокрутку самої сторінки */
+    font-family: sans-serif;
+    box-sizing: border-box; /* Важливо для розрахунків */
+}
+body {
+    background-image: url('Whiterun.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+p {
+    color: #f0f0f0;
+    margin: 10px 0;
+    font-size: 14px; /* Трохи менший шрифт, щоб влазив */
+}
+a { color: #add8e6; text-decoration: none; }
+.italic { font-style: italic; }
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f0f0f0;
+    border-bottom: 2px solid #000;
+    line-height: 10vh; 
+    padding-left: 20px;
+}
+.header h1 { margin: 0; display: inline-block; vertical-align: middle; line-height: normal; }
+.container {
+    width: 100%;
+    height: 80vh;
+    padding: 10px;
+}
+.block2, .block3, .block5, .block6, .block4 {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #000;
+    padding: 15px;
+    overflow-y: auto;
+}
+.block2 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin-right: 1%;
+}
+.block3 {
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin-right: 1%;
+}
+.group {
+    width: 53%;
+    height: 100%;
+    float: left;
+}
+.block4 {
+    width: 100%;
+    height: 20%;
+    margin-bottom: 2%;
+    height: calc(20% - 10px); 
+    margin-bottom: 10px;
+}
+.block4 ul { display: inline-block; vertical-align: top; margin: 10px 30px; }
+.sub-columns {
+    width: 100%;
+    height: 80%;
+}
+.block5 {
+    width: 49%;
+    height: 100%;
+    float: left;
+    margin-right: 2%;
+}
+.block6 {
+    width: 49%;
+    height: 100%;
+    float: left;
+}
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f0f0f0;
+    border-top: 2px solid #000;
+    clear: both;
+    text-align: right;
+    line-height: 10vh;
+    padding-right: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footer h1 { margin: 0; display: inline-block; vertical-align: middle; line-height: normal; }
